@@ -1,0 +1,29 @@
+#Name: (First Name Last Name)
+#Class: (INFO 1200)
+#Section: (X01)
+#Professor: (Crandall)
+#Date:
+#Project #: MO5_P1
+#I declare that the source code contained in this assignment was written solely by me.
+#I understand that copying any source code, in whole or in part, 
+#constitutes cheating, and that I will receive a zero on this project
+#if I am found in violation of this policy.
+
+print("Corbin Woods's Even or Odd Checker") #prints welcome message
+print()
+
+def is_even(num): #defines the is_even fucntion with the num parameter
+    if num % 2 == 0: #if the num produces no remainder, return true
+        return True
+    elif num % 2 != 0: #if the num produces a remainder return false
+        return False
+def main():
+    print("Corbin's even or odd checker") #prints name of the program
+    print()
+    my_num = int(input("Enter an integer:")) #gets input from user
+    if (is_even(my_num)== True): #if the number is true, prints message saying so
+        print("This is an even number")
+    else: #if the number is false, prints message saying so
+        print("This is an odd number")
+
+if __name__ == "__main__": main()
